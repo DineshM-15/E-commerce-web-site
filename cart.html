@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cart</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Your Cart</h1>
+
+<div id="cartItems"></div>
+
+<a href="checkout.html">
+<button>Checkout</button>
+</a>
+
+<script>
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+let container = document.getElementById("cartItems");
+
+cart.forEach(item => {
+
+container.innerHTML += `
+<div>
+<h3>${item.name}</h3>
+<p>₹${item.price}</p>
+</div>
+`;
+
+});
+
+</script>
+
+</body>
+</html>
