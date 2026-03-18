@@ -17,3 +17,4 @@ This is a simple E-commerce website UI built using HTML, CSS and JavaScript.
 ## Author
 
 Dinesh M
+https://comfy-unicorn-a9845d.netlify.app/
